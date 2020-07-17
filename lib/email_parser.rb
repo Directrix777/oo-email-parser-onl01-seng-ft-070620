@@ -21,7 +21,8 @@ class EmailAddressParser
     end
     binding.pry
     parsed.flatten
-
+    parsed = parsed.uniq
+    parsed
   end
 
 end
