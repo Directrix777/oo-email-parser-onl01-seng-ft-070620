@@ -13,10 +13,10 @@ class EmailAddressParser
 
   def parse
     parsed = []
-    if @emails.chrs.include?(",")
+    if @emails.chars.include?(",")
       parsed = @emails.split(", ")
     end
-    
+
   end
 
 end
