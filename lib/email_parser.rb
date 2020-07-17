@@ -6,8 +6,17 @@
 class EmailAddressParser
 
   attr_accessor :emails
+
   def initialize(emails)
     @emails = emails
+  end
+
+  def parse
+    parsed = []
+    if @emails.chrs.include?(",")
+      parsed = @emails.split(", ")
+    end
+    
   end
 
 end
