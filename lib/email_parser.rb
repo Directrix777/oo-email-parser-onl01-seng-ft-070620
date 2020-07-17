@@ -16,7 +16,7 @@ class EmailAddressParser
     parsed = []
     parsed << @emails.split(", ")
     binding.pry
-    parsed.each do |email|
+    parsed = parsed.collect do |email|
       email = email.split(" ")
     end
     binding.pry
