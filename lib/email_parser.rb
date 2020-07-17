@@ -21,7 +21,7 @@ class EmailAddressParser
     end
     parsed.flatten
     parsed = parsed.uniq
-    parsed
+    parsed.flatten
   end
 
 end
