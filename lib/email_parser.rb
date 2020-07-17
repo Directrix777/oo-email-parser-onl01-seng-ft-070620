@@ -20,8 +20,8 @@ class EmailAddressParser
       email = email.split(" ")
     end
     parsed.flatten
-    parsed.uniq
-    #parsed.flatten
+    parsed = parsed.uniq
+    parsed.flatten
   end
 
 end
