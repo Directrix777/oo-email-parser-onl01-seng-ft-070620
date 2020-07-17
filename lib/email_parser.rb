@@ -19,6 +19,7 @@ class EmailAddressParser
     parsed.each do |email|
       email = email.split(" ")
     end
+    binding.pry
     parsed.flatten
 
   end
